@@ -554,55 +554,74 @@ h4 {
   padding: 0 2vw;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 14px; /* Ajusta el tamaño de fuente base */
   }
+
   nav {
-    padding: 5vh 10px;
+    padding: 3vh 5vw; /* Ajusta el espaciado del encabezado */
+    width: 90vw; /* Ajusta el ancho del encabezado */
   }
+
   #navlogo {
-    max-width: 10vh;
+    max-width: 40px; /* Ajusta el tamaño del logo */
   }
+
   nav ul {
-    flex-direction: column;
+    display: none; /* Oculta la lista de navegación */
   }
-  nav li {
-    margin-left: 0;
-  }
+
   #socialmedia {
-    position: static;
-    display: flex;
-    margin-top: 20px;
+    display: none; /* Oculta los íconos de redes sociales */
   }
-  #backrectangle, #backrectangle2 {
-    display: none;
+
+  #backrectangle {
+    padding: 300px 10vw 0 0; /* Ajusta el tamaño del fondo */
   }
+
   h1 {
-    font-size: 5vh;
+    font-size: 6vh; /* Ajusta el tamaño de h1 */
+    margin-top: 2vh; /* Ajusta el margen superior de h1 */
   }
-  header {
-    flex-direction: column;
-    padding: 0 10px;
-  }
+
   #illustration {
-    width: 100%;
-    margin-left: 0;
-    transform: rotate(0);
-    position: static;
-    right: 0;
+    width: 100%; /* Ajusta el ancho de la ilustración */
+    margin-left: 0; /* Elimina el margen izquierdo de la ilustración */
+    transform: none; /* Elimina la rotación */
+    position: static; /* Elimina la posición relativa */
+    right: 0; /* Elimina el ajuste a la derecha */
   }
+
   .cta {
-    position: static;
-    padding: 10px 20px;
+    position: static; /* Elimina la posición absoluta */
+    padding: 2vh 3.5vw; /* Ajusta el espaciado del botón */
   }
+
+  .cta:before {
+    display: none; /* Oculta el círculo del botón */
+  }
+
   .cta span {
-    top: 0;
-    left: 0;
-    font-size: 18px;
+    top: 0; /* Elimina el ajuste superior del texto */
+    left: 0; /* Elimina el ajuste izquierdo del texto */
+    font-size: 3vh; /* Ajusta el tamaño del texto del botón */
   }
+
   .cta svg {
-    top: 0;
-    left: 10px;
+    top: 0; /* Elimina el ajuste superior del ícono */
+    left: 0; /* Elimina el ajuste izquierdo del ícono */
+    margin-left: 0; /* Elimina el margen izquierdo del ícono */
   }
 }
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex; /* Muestra la lista de navegación */
+  }
+
+  #socialmedia {
+    display: flex; /* Muestra los íconos de redes sociales */
+  }
+
