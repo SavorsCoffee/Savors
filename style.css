@@ -273,11 +273,6 @@ h2 span {
   border-top-right-radius: 10vh;
 }
 
-main {
-  position: relative;
-  bottom: 10px;
-}
-
 #maintitle {
   padding: 20vh 0 0 15.5vw;
 }
@@ -305,7 +300,7 @@ main {
   position: absolute;
   width: 25vw;
   height: auto;
-  top: 167vh;
+  top: 177vh;
   left: 70vw;
 }
 
