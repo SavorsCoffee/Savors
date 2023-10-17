@@ -253,7 +253,7 @@ h2 span {
   box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
   -webkit-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
   -moz-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
-  padding: 2vh 3.5vw 2vh 3.5vw;
+  padding: 2vh 3.5vw 3vh 3.5vw;
   background-color: var(--primary);
   color: #fff;
   border-radius: 20px;
