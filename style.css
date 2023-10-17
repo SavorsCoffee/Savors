@@ -3,6 +3,9 @@ html {
 }
 
 body {
+  zoom: 90%;
+  transform: scale(0.9);
+  transform-origin: 0 0;
   user-select:none;
   font-family: 'Lora', serif;
   margin: 0;
