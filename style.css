@@ -110,7 +110,7 @@ a {
   opacity: 90%;
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: -5px;
   right: 0;
   margin: 0;
   border-bottom-left-radius: 10vh;
