@@ -554,3 +554,55 @@ h4 {
   padding: 0 2vw;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  nav {
+    padding: 5vh 10px;
+  }
+  #navlogo {
+    max-width: 10vh;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-left: 0;
+  }
+  #socialmedia {
+    position: static;
+    display: flex;
+    margin-top: 20px;
+  }
+  #backrectangle, #backrectangle2 {
+    display: none;
+  }
+  h1 {
+    font-size: 5vh;
+  }
+  header {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  #illustration {
+    width: 100%;
+    margin-left: 0;
+    transform: rotate(0);
+    position: static;
+    right: 0;
+  }
+  .cta {
+    position: static;
+    padding: 10px 20px;
+  }
+  .cta span {
+    top: 0;
+    left: 0;
+    font-size: 18px;
+  }
+  .cta svg {
+    top: 0;
+    left: 10px;
+  }
+}
