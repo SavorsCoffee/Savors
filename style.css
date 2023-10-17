@@ -141,10 +141,10 @@ header {
   width: 55vh;
   height: auto;
   margin-left: 13vw;
+  margin-top: 5vh;
   padding: 0;
   transform: rotate(200deg);
   position: relative;
-  top: 40px;
   right: 80px;
 }
 ¨
