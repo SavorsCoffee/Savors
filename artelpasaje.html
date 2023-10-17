@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Savor's | Blog</title>
+    <link rel="stylesheet" href="artstyle.css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&family=Poppins:wght@600;800&display=swap"  rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9259dc80b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="images/savorslogo.png" id="navlogo" alt="Logo de Savor's">
+        <ul>
+            <li class="navbaritem"><a href="index.html">Inicio</a></li>
+            <li class="navbaritem"><a href="#article">Artículo</a></li>
+            <li class="navbaritem"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <div id="article">
+    <h1>Explorando el Rincón del Café en Mendoza: El Pasaje</h1>
+    <h5 class="category">5 Oct de 2023</h5>
+    <img class="lineimg" src="images/lineimg.png" alt="Separador">
+
+    <p><span id="firstletter">D</span>esde hace tres años, en plena Avenida Colón, se encuentra un rincón para los amantes del buen café: "El Pasaje"
+        <a target="_blank" href="https://www.instagram.com/elpasajecafemza/">@elpasajecafemza</a>. Desde mí experiencia, es un lugar que merece totalmente la pena visitar. En mi reciente
+        visita a principios de octubre, tuve la oportunidad de experimentar la combinación perfecta de café de
+        especialidad y una variada oferta de comidas en la carta.</p>
+
+    <img src="elpasajeipano.jpg" class="artimg" alt='Imagen del café "El pasaje"'>
+
+    <p>El Pasaje es un espacio que irradia calidez desde el momento en el que entras. A pesar de su tamaño modesto, el
+        espacio es muy cómodo, su ambiente y decoración acogedores se complementan con la calidad de su café. Una
+        característica interesante de El Pasaje es que es un café pet friendly.</p>
+
+    <p>Una de las cosas que más me llamó la atención es la diversidad del menú (como dato adicional: todas las
+        promociones vienen con un jugo natural del día). No solo ofrecen merienda y desayuno, sino que también tienen un
+        menú que incluye varias opciones de almuerzo. También hay algunas alternativas sin tacc en el menú y por un
+        adicional de $150, podes cambiar la leche de cualquier infusión por leche de almendras, lo que es un detalle que
+        siempre aprecio. Me parece un buen detalle a destacar, que todo el pan que utilizan en las promociones es
+        artesanal y de elaboración propia.</p>
+
+    <p>En mi visita, decidí probar dos de las promociones: optamos por un cortado y un capuchino, dos jugos de naranja
+        exprimidos, 2 medialunas y un tostado de jamón y queso en pan ciabatta de la casa. La atención fue rápida y
+        amable, y en poco tiempo ya me encontraba disfrutando de una rica merienda.</p>
+ 
+    <p>No solo yo disfruté de esta experiencia en El Pasaje, sino que también en reseñas de usuarios de Maps
+        (puntuación de 4.4 estrellas) y Tripadvisor podemos ver reflejada la calidad del lugar:<br>
+
+        - "Hoy decidí conocer este café y me llevé una agradable sorpresa… El café a una temperatura ideal, las
+        medialunas muy ricas y mi desayuno muy completo y rico!"<br>
+        - "Hoy fui con mi hija celíaca por segunda vez y ella feliz de poder consumir algo rico y calentito cuando va."</p>
+
+        
+    <div class="quote">
+        <i class="fa-solid fa-quote-left fa-2xl" style="color: #E16C5B;"></i>
+        <h3>"Gran atención y excelente balance precio calidad! Es uno de los mejores lugares para desayunar y tomar café
+            en la zona. Almuerzos super accesibles"</h3>
+        <h5 class="category">Usuario de Tripadvisor</h5>
+    </div>
+    
+    <p>El Pasaje es un lugar que no podes dejar de visitar si te encontras por Mendoza. Si aún no has tenido la
+        oportunidad de visitarlo, te animo a hacerlo y disfrutar de un momento agradable acompañado de un rico desayuno
+        en este bonito café.</p>
+
+        <img src="images/lineimg.png" class="lineimg" alt="Separador">
+
+        <div class="like-button" id="likeButton">
+            <span id="likeIcon" class="empty">
+                <i class="fa-solid fa-thumbs-up" style="color: #462C2F;"></i>
+            </span>
+            <p><span id="likeCount">50</span> Me gusta</p>
+        </div>
+
+        <!--Este código fue hecho con ayuda de ChatGPT-->
+        <script> 
+            const likeButton = document.getElementById("likeButton");
+            const likeIcon = document.getElementById("likeIcon");
+            const likeCount = document.getElementById("likeCount");
+            let liked = false;
+
+            likeButton.addEventListener("click", () => {
+                if (!liked) {
+                    likeIcon.classList.remove("empty");
+                    likeIcon.classList.add("full", "clicked");
+                    likeIcon.querySelector("i").style.color = "#E16C5B";
+                    liked = true;
+                    likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                } else {
+                    likeIcon.classList.remove("full", "clicked");
+                    likeIcon.classList.add("empty");
+                    likeIcon.querySelector("i").style.color = "#462C2F";
+                    liked = false;
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                }
+            });
+        </script>        
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="subscribe">
+        <p>Suscribite para recibir información relevante! Contactanos, savorscoffeemza@gmail.com.</p>
+        <div class="subscribeinput">
+            <input type="text" placeholder="ejemplo@mail.com"/>
+            <button><i class="fa-solid fa-arrow-right fa-sm" style="color: #fff;"></i></button>
+        </div>
+    </div>
+    <div class="footertop">
+        <div id="contact">
+            <h4>Contacto</h4>
+            <ul>
+                <li>+54 261 755-5100</li>
+                <li><a href="mailto:savorscoffeemza@gmail.com?subject=Quiero%20comunicarme%20con%20Savor's%20%F0%9F%91%8B&body=%C2%A1Hola!%20Escribo%20este%20mail%20para%20hacer%20una%20consulta%20sobre...%20%0A%C2%A1Muchas%20gracias!%20%E2%98%95%F0%9F%8D%AA">savorscoffeemza@gmail.com</a></li>
+            </ul>
+        </div>
+        <div id="categories">
+            <h4>Acerca de</h4>
+            <ul>
+                <li><a href="#navlogo">Inicio</a></li>
+                <li><a href="#infoimg">Más información</a></li>
+                <li><a href="#coffeebeans">Blog</a></li>
+            </ul>
+        </div>
+        <div id="socialmediainf">
+            <h4>Seguinos</h4>
+            <ul id="socialdisplay">
+                <li><a href="#"></a><li><a target=_blank href="https://www.instagram.com/savorscoffeemza/"><i class="fa-brands fa-instagram fa-sl" style="color: #fff;"></i></a></li>
+                <li><a target=_blank href=""><i class="fa-brands fa-twitter fa-sl" style="color: #fff;"></i></a></li></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="footerbottom">
+    <div class="legaltext">
+        <a target="_blank" href="Términos y Condiciones de Uso de Savor’s.pdf">Términos y condiciones</a>
+        <span class="separator">|</span>
+        <a target="_blank" href="Política de Privacidad de Savor’s.pdf">Política de privacidad</a>
+    </div>
+    <p>Savor's 2023 © Diseñado con amor por Josefina Marsala</p>
+</div>
+
+</body>
