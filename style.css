@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  zoom: 90%;
   user-select:none;
   font-family: 'Lora', serif;
   margin: 0;
@@ -145,6 +144,7 @@ header {
   padding: 0;
   transform: rotate(200deg);
   position: relative;
+  top: 10px;
   right: 80px;
 }
 ¨
