@@ -275,7 +275,7 @@ h2 span {
 
 main {
   position: relative;
-  top: -10px;
+  bottom: 10px;
 }
 
 #maintitle {
