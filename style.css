@@ -492,7 +492,15 @@ footer li {
   transition: ease 0.3s;
 }
 
-#contact li, #categories li, #socialmediainf li:hover {
+#socialmediainf ul li:hover {
+  color: var(--primary);
+}
+
+#categories ul li:hover {
+  color: var(--primary);
+}
+
+#contact ul li:hover {
   color: var(--primary);
 }
 
@@ -532,7 +540,6 @@ h4 {
   justify-content: center;
   padding: 3vh 36vw;
   flex-direction: column;
-
 }
 
 .legaltext {
