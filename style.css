@@ -110,7 +110,7 @@ a {
   opacity: 90%;
   position: absolute;
   z-index: -1;
-  top: -5px;
+  top: 0;
   right: 0;
   margin: 0;
   border-bottom-left-radius: 10vh;
@@ -141,7 +141,6 @@ header {
   width: 55vh;
   height: auto;
   margin-left: 13vw;
-  margin-top: 5vh;
   padding: 0;
   transform: rotate(200deg);
   position: relative;
@@ -213,7 +212,7 @@ header {
 }
 
 #infoimg {
-  width: 26vw;
+  width: 29vw;
   height: auto;
   padding: 0 5vw 0 15vw;
   position: absolute;
@@ -253,7 +252,7 @@ h2 span {
   box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
   -webkit-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
   -moz-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
-  padding: 2vh 3.5vw 1.5vh 3.5vw;
+  padding: 2vh 3.5vw 2vh 3.5vw;
   background-color: var(--primary);
   color: #fff;
   border-radius: 20px;
@@ -300,7 +299,7 @@ h2 span {
   position: absolute;
   width: 25vw;
   height: auto;
-  top: 177vh;
+  top: 167vh;
   left: 70vw;
 }
 
@@ -344,7 +343,7 @@ h2 span {
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
   .artgrid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -446,13 +445,13 @@ footer {
   padding: 0 0 0 30vh;
 }
 
-.subscribe {
+#subscribe {
   display: flex;
   padding: 5vh 18vw;
   align-items: center;
 }
 
-.subscribe p {
+#subscribe p {
   font-size: 3vh;
   width: 40vw;
   color: #E16C5B;
@@ -554,74 +553,215 @@ h4 {
   padding: 0 2vw;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Ajusta el tamaño de fuente base */
-  }
+#menuicon {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  right: 50px;
+}
 
-  nav {
-    padding: 3vh 5vw; /* Ajusta el espaciado del encabezado */
-    width: 90vw; /* Ajusta el ancho del encabezado */
-  }
+#mobileitems {
+  display: none;
+}
 
-  #navlogo {
-    max-width: 40px; /* Ajusta el tamaño del logo */
-  }
+#maintitle p {
+  width: 38vw;
+}
 
-  nav ul {
-    display: none; /* Oculta la lista de navegación */
-  }
-
-  #socialmedia {
-    display: none; /* Oculta los íconos de redes sociales */
+@media screen and (max-width: 800px) {
+  #pcitems {
+    display: none;
   }
 
   #backrectangle {
-    padding: 300px 10vw 0 0; /* Ajusta el tamaño del fondo */
+    width: 100vw;
+    height: 270px;
   }
 
+  #menuicon {
+    display: block;
+  }
+
+  #mobileitems {
+    z-index: 100000;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    padding: 2vh 3vw;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    right: 8.8vw;
+    top: 70px;
+    box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
+    -moz-box-shadow: -12px 9px 24px -12px rgba(0,0,0,0.48);
+  }
+
+  #mobileitems li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #mobileitems a {
+    color: var(--textcolor);
+  }
+ 
   h1 {
-    font-size: 6vh; /* Ajusta el tamaño de h1 */
-    margin-top: 2vh; /* Ajusta el margen superior de h1 */
+    font-size: 10vh;
+    margin: 0 0 8vw 0;
+    padding: 0;
+  }
+
+  header {
+    display:inline-flex;
+    flex-direction: column-reverse;
+  }
+
+  header div {
+    position: relative;
+    top: -270px;
   }
 
   #illustration {
-    width: 100%; /* Ajusta el ancho de la ilustración */
-    margin-left: 0; /* Elimina el margen izquierdo de la ilustración */
-    transform: none; /* Elimina la rotación */
-    position: static; /* Elimina la posición relativa */
-    right: 0; /* Elimina el ajuste a la derecha */
+    transform: rotate(-100deg);
+    margin-left: 220px;
+    width: 430px;
+    top: -180px;
   }
 
-  .cta {
-    position: static; /* Elimina la posición absoluta */
-    padding: 2vh 3.5vw; /* Ajusta el espaciado del botón */
+  #infoimg {
+    display: none;
   }
 
-  .cta:before {
-    display: none; /* Oculta el círculo del botón */
+  #overallinfo {
+    position: relative;
+    top: -120px;
   }
 
-  .cta span {
-    top: 0; /* Elimina el ajuste superior del texto */
-    left: 0; /* Elimina el ajuste izquierdo del texto */
-    font-size: 3vh; /* Ajusta el tamaño del texto del botón */
+  .lineimg {
+    width: 70px;
+    height: 7.5px;
+    padding: 0;
   }
 
-  .cta svg {
-    top: 0; /* Elimina el ajuste superior del ícono */
-    left: 0; /* Elimina el ajuste izquierdo del ícono */
-    margin-left: 0; /* Elimina el margen izquierdo del ícono */
+  #infotxt {
+    padding: 0vh 0 0vh 10vw;
+  }
+
+  #infotxt p {
+    width: 70vw;
+  }
+
+  #coffeebeans {
+    top: 200vh;
+    left: 45vw;
+    width: 280px;
+  }
+
+  #backrectangle2 {
+    width: 100vw;
+    height: 450px;
+  }
+
+  #maintitle {
+    position: relative;
+    top: -90px;
+  }
+
+  #maintitle p {
+    width: 70vw;
+  }
+
+  #maintitle img {
+    left: 390px;
+  }
+
+  .artgrid {
+    max-width: 75vw;
+    top: -320px;
+  }
+
+  #contactanos {
+    display: none;
+  }
+
+  #subscribe {
+    width: 90vw;
+    position: relative;
+    left: -70px;
+  }
+
+  #subscribe p {
+    font-size: 2.5vh;
+    width: 40vw;
+  }
+
+  .footertop {
+    width: 100%;
+    margin: 0;
+    padding: 0vh 8vw;
+  }
+
+  .subscribeinput input {
+    width: 30vw;
+  }
+  
+  #contact, #categories, #socialmediainf {
+    flex: 1;
+    padding: 0px;
+  }
+
+  #contact li, #categories li, #socialmediainf li {
+    position: relative;
+    left: -40px;
+  }
+
+  h4 {
+    padding-left: 0px;
+  }
+  
+  .footerbottom {
+    padding: 3vh 24vw;
+  }
+  
+  .footerbottom p {
+    padding: 0 5vw;
   }
 }
 
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-  nav ul {
-    display: flex; /* Muestra la lista de navegación */
+@media screen and (max-width: 650px) {
+  .footerbottom {
+    padding: 3vh 23vw;
   }
-
-  #socialmedia {
-    display: flex; /* Muestra los íconos de redes sociales */
+  
+  .footerbottom p {
+    padding: 0 6vw;
   }
+}
 
+@media screen and (max-width: 630px) {
+  .footerbottom {
+    padding: 3vh 20vw;
+  }
+  
+  .footerbottom p {
+    padding: 0 6vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footerbottom {
+    padding: 3vh 18vw;
+  }
+  
+  .footerbottom p {
+    padding: 0 7vw;
+  }
+}
