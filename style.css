@@ -489,19 +489,22 @@ footer li {
   margin: 0 0 5px 0;
   padding: 0;
   font-size: 2vh;
+}
+
+.hoverli:hover {
+  color: var(--primary);
+}
+
+.hoverli {
   transition: ease 0.3s;
 }
 
-#socialmediainf ul li:hover {
+.hoverli li:hover {
   color: var(--primary);
 }
 
-#categories ul li:hover {
-  color: var(--primary);
-}
-
-#contact ul li:hover {
-  color: var(--primary);
+.hoverli li {
+  transition: ease 0.3s;
 }
 
 h4 {
