@@ -492,7 +492,7 @@ footer li {
   transition: ease 0.3s;
 }
 
-footer li:hover {
+#contact li, #categories li, #socialmediainf li:hover {
   color: var(--primary);
 }
 
