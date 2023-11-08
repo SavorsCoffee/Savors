@@ -7,11 +7,6 @@
     display: none;
   }
 
-  #backrectangle {
-    width: 100vw;
-    height: 270px;
-  }
-
   #menuicon {
     display: block;
   }
@@ -184,6 +179,7 @@ footer {
     padding: 20px 0;
     display: inline-flex;
     flex-direction: column;
+    margin: auto;
   }
   
   .footertop {
@@ -294,124 +290,3 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8vh;
   }
-  
-  @media screen and (max-width: 800px) {  #contactanos {
-    display: none;
-  }
-
-  #subscribe {
-    width: 90vw;
-    position: relative;
-    left: -70px;
-  }
-
-  #subscribe p {
-    font-size: 2.5vh;
-    width: 40vw;
-  }
-
-  .footertop {
-    width: 100%;
-    margin: 0;
-    padding: 0vh 8vw;
-  }
-
-  .subscribeinput input {
-    width: 30vw;
-  }
-  
-  #contact, #categories, #socialmediainf {
-    flex: 1;
-    padding: 0px;
-  }
-
-  #contact li, #categories li, #socialmediainf li {
-    position: relative;
-    left: -40px;
-  }
-
-  h4 {
-    padding-left: 0px;
-  }
-  
-  .footerbottom {
-    padding: 3vh 24vw;
-  }
-  
-  .footerbottom p {
-    padding: 0 5vw;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .footerbottom {
-    padding: 3vh 23vw;
-  }
-  
-  .footerbottom p {
-    padding: 0 6vw;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .footerbottom {
-    padding: 3vh 20vw;
-  }
-  
-  .footerbottom p {
-    padding: 0 6vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footerbottom {
-    padding: 3vh 18vw;
-  }
-  
-  .footerbottom p {
-    padding: 0 7vw;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  #backrectangle {
-    width: 100vw;
-    height: 90px;
-  }
-
-  #menuicon {
-    display: block;
-    width: 20px;
-    height: auto;
-  }
-
-  #navlogo {
-    width: 70px;
-  }
-
-  h1 {
-    font-size: 45px;
-    margin: 11vh 0 7vh 0;
-  }
-
-  #illustration {
-    transform: rotate(-100deg);
-    margin-left: 190px;
-    width: 340px;
-    top: -140px;
-  }
-
-  #coffeebeans {
-    top: 1255px;
-    width: 230px;
-    left: 140px;
-  }
-
-  .footerbottom {
-    padding: 0vh 12vw;
-  }
-  
-  .footerbottom p {
-    padding: 0 7vw;
-  }
-}
