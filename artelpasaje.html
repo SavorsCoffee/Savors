@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Savor's | Blog</title>
     <link rel="stylesheet" href="artstyle.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="shortcut icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,64 @@
 </head>
 
 <body>
-    <nav>
-        <img src="savorslogo.png" id="navlogo" alt="Logo de Savor's">
-        <ul>
+        <!--Pantalla de carga tomada de https://www.uplabs.com/posts/coffee-smoke-loader-->
+        <div class="loader-wrapper">
+            <div class="smoke-loader">
+                <div class="smoke-wave">
+                  <div class="smoke1"></div>
+                  <div class="smoke2"></div>
+                  <div class="smoke3"></div>
+                </div>  
+                <div class="coffee-cup">
+                  <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 360" xml:space="preserve" height="80" style="fill: #E16C5B;">
+                  <g>
+                    <g>
+                      <path d="M450.6,72.6c-1.2,17-5.9,50-5.9,50c38.5,51.2-2.3,103.2-34.5,114c0,0-16.6,32.4-26.4,46.9C449,280.1,501,229.1,501,166.8
+                        C501,128.5,481.4,94.1,450.6,72.6L450.6,72.6z"/>
+                      <path d="M332.6,308.2h-24.1c61.7-52.8,102.7-155,102.7-274.9c0-11.3-9.1-20.4-20.4-20.4H31.4C20.1,12.9,11,22,11,33.3
+                        c0,120,41,222.1,102.7,274.9H89.5c-11.3,0-20.4,9.1-20.4,20.4S78.2,349,89.5,349h243.1c11.3,0,20.4-9.1,20.4-20.4
+                        S343.9,308.2,332.6,308.2L332.6,308.2z"/>
+                    </g>
+                  </g>
+                </svg>
+                </div> 
+              </div>
+          </div>
+    
+          <script>window.addEventListener('load', function () {
+            // Agrega un retraso de 4 segundos (4000 milisegundos) antes de agregar la clase "loaded"
+            setTimeout(function () {
+              document.body.classList.add('loaded');
+              // Oculta el loader al agregar la clase "loaded"
+              document.querySelector('.loader-wrapper').style.display = 'none';
+            }, 4000); // 4000 milisegundos = 4 segundos
+          });
+          </script>
+        
+    <div class="content">
+        <nav>
+            <img src="savorslogo.png" id="navlogo" alt="Logo de Savor's">
+            <ul id="pcitems">
+                <li class="navbaritem"><a href="index.html">Inicio</a></li>
+                <li class="navbaritem"><a href="#firstletter">Artículo</a></li>
+                <li class="navbaritem"><a href="#contact">Contacto</a></li>
+            </ul>
+            <img src="menu.png" id="menuicon" alt="">
+        </nav>
+        <ul id="mobileitems">
             <li class="navbaritem"><a href="index.html">Inicio</a></li>
-            <li class="navbaritem"><a href="#article">Artículo</a></li>
-            <li class="navbaritem"><a href="#">Contacto</a></li>
+            <li class="navbaritem"><a href="#firstletter">Artículo</a></li>
+            <li class="navbaritem"><a href="#contact">Contacto</a></li>
         </ul>
-    </nav>
+        <script>document.getElementById("menuicon").addEventListener("click", function() {
+            var mobileItems = document.getElementById("mobileitems");
+            if (mobileItems.style.display === "block") {
+                mobileItems.style.display = "none";
+            } else {
+                mobileItems.style.display = "block";
+            }
+        });</script>
 
 <main>
     <div id="article">
@@ -34,7 +85,7 @@
         visita a principios de octubre, tuve la oportunidad de experimentar la combinación perfecta de café de
         especialidad y una variada oferta de comidas en la carta.</p>
 
-    <img src="elpasajeipano.jpg" class="artimg" alt='Imagen del café "El pasaje"'>
+    <img src="elpasajepano.png" class="artimg" alt='Imagen del café "El pasaje"'>
 
     <p>El Pasaje es un espacio que irradia calidez desde el momento en el que entras. A pesar de su tamaño modesto, el
         espacio es muy cómodo, su ambiente y decoración acogedores se complementan con la calidad de su café. Una
@@ -106,8 +157,8 @@
 </main>
 
 <footer class="footer">
-    <div class="subscribe">
-        <p>Suscribite para recibir información relevante! Contactanos, savorscoffeemza@gmail.com.</p>
+    <div id="subscribe">
+        <p>Suscribite para recibir información relevante!<span id="contactanos"> Contactanos, savorscoffeemza@gmail.com.</span></p>
         <div class="subscribeinput">
             <input type="text" placeholder="ejemplo@mail.com"/>
             <button><i class="fa-solid fa-arrow-right fa-sm" style="color: #fff;"></i></button>
@@ -118,7 +169,7 @@
             <h4>Contacto</h4>
             <ul>
                 <li>+54 261 755-5100</li>
-                <li><a href="mailto:savorscoffeemza@gmail.com?subject=Quiero%20comunicarme%20con%20Savor's%20%F0%9F%91%8B&body=%C2%A1Hola!%20Escribo%20este%20mail%20para%20hacer%20una%20consulta%20sobre...%20%0A%C2%A1Muchas%20gracias!%20%E2%98%95%F0%9F%8D%AA">savorscoffeemza@gmail.com</a></li>
+                <li><a href="mailto:savorscoffeemza@gmail.com?subject=Quiero%20comunicarme%20con%20Savor's%20%F0%9F%91%8B&body=%C2%A1Hola!%20Escribo%20este%20mail%20para%20hacer%20una%20consulta%20sobre...%20%0A%C2%A1Muchas%20gracias!%20%E2%98%95%F0%9F%8D%AA" style="color: #fff;">savorscoffeemza@gmail.com</a></li>
             </ul>
         </div>
         <div id="categories">
@@ -146,5 +197,5 @@
     </div>
     <p>Savor's 2023 © Diseñado con amor por Josefina Marsala</p>
 </div>
-
+</div>
 </body>

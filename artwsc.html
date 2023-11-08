@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Savor's | Blog</title>
+    <link rel="stylesheet" href="artstyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&family=Poppins:wght@600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9259dc80b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Pantalla de carga tomada de https://www.uplabs.com/posts/coffee-smoke-loader-->
+    <div class="loader-wrapper">
+        <div class="smoke-loader">
+            <div class="smoke-wave">
+                <div class="smoke1"></div>
+                <div class="smoke2"></div>
+                <div class="smoke3"></div>
+            </div>
+            <div class="coffee-cup">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 360"
+                    xml:space="preserve" height="80" style="fill: #E16C5B;">
+                    <g>
+                        <g>
+                            <path d="M450.6,72.6c-1.2,17-5.9,50-5.9,50c38.5,51.2-2.3,103.2-34.5,114c0,0-16.6,32.4-26.4,46.9C449,280.1,501,229.1,501,166.8
+                        C501,128.5,481.4,94.1,450.6,72.6L450.6,72.6z" />
+                            <path d="M332.6,308.2h-24.1c61.7-52.8,102.7-155,102.7-274.9c0-11.3-9.1-20.4-20.4-20.4H31.4C20.1,12.9,11,22,11,33.3
+                        c0,120,41,222.1,102.7,274.9H89.5c-11.3,0-20.4,9.1-20.4,20.4S78.2,349,89.5,349h243.1c11.3,0,20.4-9.1,20.4-20.4
+                        S343.9,308.2,332.6,308.2L332.6,308.2z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>window.addEventListener('load', function () {
+            // Agrega un retraso de 4 segundos (4000 milisegundos) antes de agregar la clase "loaded"
+            setTimeout(function () {
+                document.body.classList.add('loaded');
+                // Oculta el loader al agregar la clase "loaded"
+                document.querySelector('.loader-wrapper').style.display = 'none';
+            }, 4000); // 4000 milisegundos = 4 segundos
+        });
+    </script>
+
+    <div class="content">
+        <nav>
+            <img src="savorslogo.png" id="navlogo" alt="Logo de Savor's">
+            <ul id="pcitems">
+                <li class="navbaritem"><a href="#overallinfo">Acerca de</a></li>
+                <li class="navbaritem"><a href="#coffeebeans">Blog</a></li>
+                <li class="navbaritem"><a href="#contact">Contacto</a></li>
+            </ul>
+            <img src="menu.png" id="menuicon" alt="">
+        </nav>
+        <ul id="mobileitems">
+            <li class="navbaritem"><a href="#overallinfo">Acerca de</a></li>
+            <li class="navbaritem"><a href="#coffeebeans">Blog</a></li>
+            <li class="navbaritem"><a href="#contact">Contacto</a></li>
+        </ul>
+        <script>document.getElementById("menuicon").addEventListener("click", function() {
+            var mobileItems = document.getElementById("mobileitems");
+            if (mobileItems.style.display === "block") {
+                mobileItems.style.display = "none";
+            } else {
+                mobileItems.style.display = "block";
+            }
+        });</script>
+
+        <main>
+            <div id="article">
+                <h1>White Shark Coffee, el Café que Combina Trabajo y Espresso</h1>
+                <h5 class="category">5 Oct de 2023</h5>
+                <img class="lineimg" src="lineimg.png" alt="Separador">
+
+                <p><span id="firstletter">H</span>oy quiero compartirles mi experiencia en White Shark Coffee
+                    <a target="_blank" href="https://www.instagram.com/whitesharkcoffee/">@whitesharkcoffee</a>, una
+                    cafetería de especialidad que abrió hace
+                    no mucho tiempo, ubicada en la esquina de Avenida Colón y Perú, en el centro mendocino. White Shark
+                    no solo es un lugar para disfrutar de un buen café, sino que también ofrece un ambiente ideal para
+                    el trabajo y estudio, con música suave que te transporta y te concentra y diseñado con aislación de
+                    sonido exterior, lo que hace que por más de que te encuentres en pleno centro, sea igualmente un
+                    lugar ideal para concentrarte.
+                </p>
+
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left fa-2xl" style="color: #E16C5B;"></i>
+                    <h3>"Los sentidos de un tiburón son agudos y refinados, al igual que los sabores sutiles y complejos
+                        de nuestro café de especialidad "</h3>
+                    <h5 class="category">White Shark Coffee via Instagram</h5>
+                </div>
+
+                <p>¡Hablemos de la carta¡ Es amplia y variada, con opciones que van desde productos salados y dulces,
+                    panadería y pastelería, ensaladas, wraps, sándwiches hasta tragos y cerveza. El menú incluye varias
+                    opciones sin TACC. Tiene una muy buena relación calidad-precio. Lo más destacado acá son los cafés
+                    de especialidad. Tienen café de origen colombiano y nicaragüense, ofrecen opciones filtradas y para
+                    llevar, preparados en diversas técnicas. El café colombiano es dulce, con notas de nuez y canela,
+                    mientras que el nicaragüense ofrece matices de chocolate y pomelo. También, es uno de los pocos
+                    lugares que ofrece el doppio espresso en su carta. Esta diversidad es un punto a favor. White Shark
+                    es una excelente opción para cualquier momento del día: desde desayunos y meriendas hasta almuerzos
+                    y cenas. Podes disfrutar de sus servicios de lunes a viernes desde 7:30 A 21:00hs; los fines de
+                    semana abren de 9 A 21hs.
+                </p>
+
+                <p>Si queres sentirte parte de este lugar, ofrecen merchandising que incluye gorras, remeras, buzos,
+                    vasos, etc. Además, un buen dato es que podes comprar un vaso reutilizable White Shark y obtener un
+                    20% de descuento en tus próximos cafés. Los fines de semana son especiales, ya que si pedis un café,
+                    te rellenan la taza, ofreciéndote un "refill" gratis para que sigas disfrutando del café de
+                    especialidad.</p>
+
+                <img src="wscpano.png" class="artimg" alt='Imagen del café "White Shark Coffee"' style="
+                    width: 180%;">
+
+                <p>En mí visita pedí una promoción que incluye: una bebida, sándwich a elección y un café expresso.
+                    Elegí un sándwich de jamón crudo, avocado de palta y huevo, con una limonada y un capuchino
+                    italiano, súper recomendado. Los sandwiches son generosos y perfectos para compartir.</p>
+
+                <p>Lo mejor es que todas las mesas están equipadas con enchufes, soportes para colocar laptops y poder
+                    trabajar cómodamente, acceso a Wi-Fi de buena calidad y servicio de fotocopiadora e impresora, lo
+                    que lo convierte en un espacio de coworking práctico. White Shark es un lugar donde el buen café y
+                    la productividad se encuentran en un match perfecto.</p>
+
+                <img src="lineimg.png" class="lineimg" alt="Separador">
+
+                <div class="like-button" id="likeButton">
+                    <span id="likeIcon" class="empty">
+                        <i class="fa-solid fa-thumbs-up" style="color: #462C2F;"></i>
+                    </span>
+                    <p><span id="likeCount">50</span> Me gusta</p>
+                </div>
+
+                <!--Este código fue hecho con ayuda de ChatGPT-->
+                <script>
+                    const likeButton = document.getElementById("likeButton");
+                    const likeIcon = document.getElementById("likeIcon");
+                    const likeCount = document.getElementById("likeCount");
+                    let liked = false;
+
+                    likeButton.addEventListener("click", () => {
+                        if (!liked) {
+                            likeIcon.classList.remove("empty");
+                            likeIcon.classList.add("full", "clicked");
+                            likeIcon.querySelector("i").style.color = "#E16C5B";
+                            liked = true;
+                            likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                        } else {
+                            likeIcon.classList.remove("full", "clicked");
+                            likeIcon.classList.add("empty");
+                            likeIcon.querySelector("i").style.color = "#462C2F";
+                            liked = false;
+                            likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                        }
+                    });
+                </script>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div id="subscribe">
+                <p>Suscribite para recibir información relevante!<span id="contactanos"> Contactanos,
+                        savorscoffeemza@gmail.com.</span></p>
+                <div class="subscribeinput">
+                    <input type="text" placeholder="ejemplo@mail.com" />
+                    <button><i class="fa-solid fa-arrow-right fa-sm" style="color: #fff;"></i></button>
+                </div>
+            </div>
+            <div class="footertop">
+                <div id="contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>+54 261 755-5100</li>
+                        <li><a href="mailto:savorscoffeemza@gmail.com?subject=Quiero%20comunicarme%20con%20Savor's%20%F0%9F%91%8B&body=%C2%A1Hola!%20Escribo%20este%20mail%20para%20hacer%20una%20consulta%20sobre...%20%0A%C2%A1Muchas%20gracias!%20%E2%98%95%F0%9F%8D%AA"
+                                style="color: #fff;">savorscoffeemza@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div id="categories">
+                    <h4>Acerca de</h4>
+                    <ul>
+                        <li><a href="#navlogo">Inicio</a></li>
+                        <li><a href="#infoimg">Más información</a></li>
+                        <li><a href="#coffeebeans">Blog</a></li>
+                    </ul>
+                </div>
+                <div id="socialmediainf">
+                    <h4>Seguinos</h4>
+                    <ul id="socialdisplay">
+                        <li><a href="#"></a>
+                        <li><a target=_blank href="https://www.instagram.com/savorscoffeemza/"><i
+                                    class="fa-brands fa-instagram fa-sl" style="color: #fff;"></i></a></li>
+                        <li><a target=_blank href=""><i class="fa-brands fa-twitter fa-sl" style="color: #fff;"></i></a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footerbottom">
+            <div class="legaltext">
+                <a target="_blank" href="Términos y Condiciones de Uso de Savor’s.pdf">Términos y condiciones</a>
+                <span class="separator">|</span>
+                <a target="_blank" href="Política de Privacidad de Savor’s.pdf">Política de privacidad</a>
+            </div>
+            <p>Savor's 2023 © Diseñado con amor por Josefina Marsala</p>
+        </div>
+    </div>
+</body>
