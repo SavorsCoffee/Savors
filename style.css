@@ -104,7 +104,7 @@ a {
 }
 
 #backrectangle {
-  padding: 600px 1150px 0 0;
+  padding: 38rem 90vw 0 0;
   background-color: var(--background);
   opacity: 90%;
   position: absolute;
@@ -160,14 +160,14 @@ header {
   display: block;
   border-radius: 28px;
   background: rgba(211, 105, 89, 0.5);
-  width: 60px; /* Cambiado de 4vw a 60px en width */
-  height: 60px; /* Cambiado de 4vw a 60px en height */
+  width: 60px;
+  height: 60px;
   transition: all 0.3s ease;
 }
 
 .cta span {
-  top: 13px; /* Cambiado de 1.7vh a 13px en top */
-  left: 15px; /* Cambiado de 1.7vw a 15px en left */
+  top: 13px;
+  left: 15px;
   position: relative;
   font-size: 25px;
   font-weight: 600;
@@ -176,8 +176,8 @@ header {
 
 .cta svg {
   position: relative;
-  top: 15px; /* Cambiado de 1.7vh a 15px en top */
-  left: 18px; /* Cambiado de 1.9vw a 18px en left */
+  top: 15px;
+  left: 18px;
   margin-left: 10px;
   fill: none;
   stroke: #fff;
@@ -303,7 +303,8 @@ h2 span {
   }
 
 #backrectangle2 {
-  padding: 1100px 1150px 0 0;
+  height: 1120px;
+  width: 90vw;
   opacity: 90%;
   background-color: var(--primary);
   position: absolute;
@@ -379,21 +380,29 @@ h2 span {
   grid-row: span 1;
 }
 
-@media all and (min-width: 320px) {
+@media screen and (max-width: 440px) {
   .artgrid {
-    grid-template-columns: repeat(1, 1fr);
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 195px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-}
 
-@media all and (min-width: 800px) {
-  .artgrid {
-    grid-template-columns: repeat(3, 1fr);
+  .artgrid::before {
+    display: none;
   }
-}
 
-@media all and (min-width: 1024px) {
-  .artgrid {
-    grid-template-columns: repeat(3, 1fr);
+  .artgrid .griditem {
+    width: 70vw;
+    margin: 0vh;
+    padding: 0;
+  }
+
+  a .previewimage{
+    width: 70vw;
+    height: 150px;
+    position: relative;
   }
 }
 
@@ -506,10 +515,33 @@ h2 span {
   left: -35px;
 }
 
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 10vh;
-    margin: 0 0 8vw 0;
+@media screen and (max-width: 1025px) {
+  #backrectangle {
+    padding: 34.5rem 90vw 0 0;
+  }
+
+  #infoimg {
+    width: 340px;
+    top: 650px;
+    padding-left: 12.7vw;
+  }
+
+  .artgrid {
+    max-width: 67vw;
+    top: -200px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  #navlogo {
+    padding-left: 1.7rem;
+  }
+
+  div h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.3vh;
+    margin: 5vh 0 0 0;
     padding: 0;
   }
 
@@ -523,20 +555,51 @@ h2 span {
     top: -270px;
   }
 
-  #illustration {
-    transform: rotate(-100deg);
-    margin-left: 220px;
-    width: 430px;
-    top: -180px;
+  #backrectangle {
+    width: 300rem;
+    height: 17vh;
   }
 
+  header #illustration {
+    transform: rotate(-100deg);
+    margin-left: 170px;
+    width: 320px;
+    top: -150px;
+  }
+  
+  .cta {
+    position: relative;
+    top: 25px;
+    width: 145px; 
+  }
+  
+  .cta:before {
+    width: 145px;
+    height: 50px;
+  }
+    
+  .cta:hover:before {
+    width: 145px;
+    height: 50px;
+  }
+  
+  .cta span {
+    font-size: 18px;
+  }
+  
   #infoimg {
     display: none;
   }
 
+  #coffeebeans {
+    width: 200px;
+    top: 129vh;
+    left: 170px;
+  }
+
   #overallinfo {
     position: relative;
-    top: -120px;
+    top: -100px;
   }
 
   .lineimg {
@@ -553,15 +616,8 @@ h2 span {
     width: 70vw;
   }
 
-  #coffeebeans {
-    top: 200vh;
-    left: 45vw;
-    width: 280px;
-  }
-
-  #backrectangle2 {
-    width: 100vw;
-    height: 450px;
+  .coffeebens {
+    top: 770px;
   }
 
   #maintitle {
@@ -574,7 +630,7 @@ h2 span {
   }
 
   #maintitle img {
-    left: 390px;
+    display: none;
   }
 
   .artgrid {
@@ -582,4 +638,12 @@ h2 span {
     top: -320px;
   }
 
+  #backrectangle2 {
+    width: 300rem;
+    height: 133rem;
+  }
+
+  .main {
+    display: none;
+  }
 }
