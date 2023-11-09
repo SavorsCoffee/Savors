@@ -332,7 +332,8 @@ footer {
 
     div #responsivemedia {
       display: inline-flex;
-      margin: auto;
+      position: relative;
+      left: -200px;
       color: var(--primary);
     }
 
