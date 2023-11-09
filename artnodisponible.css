@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #E16C5B;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    width: 50vw;
+    font-family: 'Lora', sans-serif;
+    font-weight: normal;
+    margin: 20px;
+    color: #462C2F;
+    font-weight: light;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}

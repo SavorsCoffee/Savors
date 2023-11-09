@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   font-family: 'Lora', serif;
   margin: 0;
@@ -639,8 +643,8 @@ h2 span {
   }
 
   #backrectangle2 {
-    width: 300rem;
-    height: 133rem;
+    width: 305rem;
+    height: 120rem;
   }
 
   .main {
