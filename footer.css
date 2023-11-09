@@ -285,6 +285,7 @@ footer {
   .legaltext {
     display: flex;
     align-items: center;
+    color: #fff;
   }
   
   .legaltext a {
@@ -333,7 +334,7 @@ footer {
     div #responsivemedia {
       display: inline-flex;
       position: relative;
-      left: -500px;
+      left: 500px;
       color: var(--primary);
     }
 
