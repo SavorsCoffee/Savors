@@ -333,7 +333,7 @@ footer {
     div #responsivemedia {
       display: inline-flex;
       position: relative;
-      left: -520px;
+      left: -500px;
       color: var(--primary);
     }
 
@@ -355,10 +355,10 @@ footer {
     .legaltext a {
       margin: 0 5px;
       font-size: 15px;
+      padding: 0 10vw;
     }
 
     .legaltext {
       margin: auto;
-      padding: 0 10vw;
     }
   }
