@@ -1,3 +1,7 @@
+a {
+text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
   #socialmedia {
     display: none;
