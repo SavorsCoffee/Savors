@@ -1,7 +1,3 @@
-a {
-text-decoration: none;
-}
-
 @media screen and (max-width: 800px) {
   #socialmedia {
     display: none;
@@ -43,7 +39,7 @@ text-decoration: none;
   #mobileitems a {
     color: var(--textcolor);
   }}
-  
+
 .loader-wrapper {
     display: none;
     opacity: 1;
@@ -356,17 +352,13 @@ footer {
     }  
     
     .footerbottom p {
-      margin: auto;
+      margin: 0 auto;
       font-size: 10px;
       padding-top: 10px;
     }  
 
-    .legaltext a {
-      margin: 0 5px;
-      font-size: 15px;
-    }
-
-    .legaltext {
+    div .legaltxt{
       margin: auto;
+      font-size: 13px;
     }
   }
