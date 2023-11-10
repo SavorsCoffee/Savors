@@ -38,9 +38,17 @@
 
   #mobileitems a {
     color: var(--textcolor);
-  }}
+  }
 
+  .navbaritem:hover {
+    background-color: #CCCCC;
+    border-radius: 30px;
+  }
 
+    .navbaritem {
+    transition: ease 0.5s;
+  }
+  
 .loader-wrapper {
     display: none;
     opacity: 1;
