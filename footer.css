@@ -38,16 +38,7 @@
 
   #mobileitems a {
     color: var(--textcolor);
-  }
-
-  .navbaritem:hover {
-    background-color: #CCCCC;
-    border-radius: 30px;
-  }
-
-    .navbaritem {
-    transition: ease 0.5s;
-  }
+  }}
   
 .loader-wrapper {
     display: none;
@@ -293,7 +284,6 @@ footer {
   .legaltext {
     display: flex;
     align-items: center;
-    color: #fff;
   }
   
   .legaltext a {
@@ -337,18 +327,24 @@ footer {
 
     .footertop #categories, .footertop #contact, .footertop #socialmediainf {
       display: none;
+      position: relative;
     }
 
     div #responsivemedia {
-      display: inline-flex;
+      display:inline-flex;
       position: relative;
-      left: -200px;
+      right: 50vw;
+      justify-content: center;
       color: var(--primary);
     }
 
     #responsivemedia a {
       margin: 0 10px;
       color: var(--primary);
+    }
+
+    #responsivemedia {
+      font-size: 11px;
     }
 
     .footerbottom {
@@ -364,7 +360,6 @@ footer {
     .legaltext a {
       margin: 0 5px;
       font-size: 15px;
-      padding: 0 10vw;
     }
 
     .legaltext {
